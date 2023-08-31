@@ -1,5 +1,6 @@
 import Link from "next/link";
 import "./globals.css";
+import styles from "./page.module.css";
 
 export default function RootLayout({
   children,
@@ -10,7 +11,7 @@ export default function RootLayout({
     <html lang='en'>
       <body>
         <ul>
-          <li>
+          <li className={styles.test}>
             <Link href='/'>Home</Link>
           </li>
           <li>
